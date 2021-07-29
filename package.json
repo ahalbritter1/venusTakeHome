@@ -1,0 +1,24 @@
+{
+  "name": "venusTakeHome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahalbritter1/venusTakeHome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahalbritter1/venusTakeHome/issues"
+  },
+  "homepage": "https://github.com/ahalbritter1/venusTakeHome#readme",
+  "dependencies": {
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6"
+  }
+}
