@@ -1,4 +1,4 @@
-# venusTakeHome# venusTakeHome
+# venusTakeHome
 
 1. Git Clone Repo
 2. Run "NPM Install" for Jest Testing
