@@ -1,8 +1,10 @@
 const functions = require('./script');
 
-// Name Select [TRUTHY]
+// Name Select 
 test('Add Name for X and O Player', () => {
+    // [TRUTHY]
     expect(functions.nameSelect("Austin", "Mike")).toBe("Austin is X and Mike is O, Austin take the first move")
+    // [FALSY]
     expect(functions.nameSelect("Mike")).toBe('Please Select Names Before Play')
 })
 
