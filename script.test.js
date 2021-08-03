@@ -3,6 +3,7 @@ const functions = require('./script');
 // Name Select [TRUTHY]
 test('Add Name for X and O Player', () => {
     expect(functions.nameSelect("Austin", "Mike")).toBe("Austin is X and Mike is O, Austin take the first move")
+    expect(functions.nameSelect("Mike")).toBe('Please Select Names Before Play')
 })
 
 // First Player Must be X

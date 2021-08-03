@@ -32,7 +32,9 @@ const functions = {
 
     // Select Names for X & O Player
     nameSelect: (xPlayer, oPlayer) => {
+        if(xPlayer && oPlayer) {
         return `${xPlayer} is X and ${oPlayer} is O, ${xPlayer} take the first move`
+        } else return 'Please Select Names Before Play'
     },
     // Player X must go first
     firstPlayer: (player) => {
