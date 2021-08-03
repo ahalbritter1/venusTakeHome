@@ -1,7 +1,5 @@
 # venusTakeHome
 
-**Venus Take Home Test**
-
 1. Git Clone Repo
 2. Run "NPM Install" for Jest Testing
 3. Enter "NPM TEST" into command line 
