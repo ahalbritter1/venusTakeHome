@@ -50,7 +50,9 @@ const functions = {
         const indexOfSquareNum = boardCopy.indexOf(squareNum);
         if(boardCopy.includes(squareNum) && lastPlayer !== currentPlayer){
             boardCopy.splice(indexOfSquareNum, 1)
-            return true && `${currentPlayer} has placed in square ${squareNum}`
+            return `${currentPlayer} has placed in square ${squareNum}` 
+        } else if(boardCopy.length === 0) {
+            return 'Game ends in Draw'
         } else return false
     },
 

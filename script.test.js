@@ -5,8 +5,11 @@ test('Add Name for X and O Player', () => {
     expect(functions.nameSelect("Austin", "Mike")).toBe("Austin is X and Mike is O, Austin take the first move")
 })
 
-// First Player Must be X [FALSY]
+// First Player Must be X
 test('Checks for First Move (must be X!) ', () => {
+    // [TRUTHY]
+    expect(functions.firstPlayer('x')).toBe(true);
+    // [FALSY]
     expect(functions.firstPlayer('o')).toBe(false);
 })
 
@@ -20,6 +23,7 @@ test('Tracks Each Player Move (correct placement)', () => {
     expect(functions.moveTracker(3, "o", "o")).toBe(false);
 })
 
+// Reset the board back to starting position
 test('Game over & Reset Board', () => {
     expect(functions.gameReset('gameOver')).toStrictEqual([0, 1, 2, 3, 4, 5, 6, 7, 8]);
     expect(functions.gameReset()).toBe(false);
@@ -31,7 +35,7 @@ test('Checks for Winning Player or No Winner Yet', () => {
     expect(functions.checkForWinner([0, 3, 2], 'x')).toBe("Game In Progress");
 })
 
-//Board Visualization 
+//Board Visualization [TRUTHY]
 test('Board Visualization', () => {
     //Board Visualiation for API Caller
     expect(functions.boardVisualization(3, "x")).toStrictEqual(["", "", "", "x:3", "", "", "", "", ""]);
